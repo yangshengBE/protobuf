@@ -65,8 +65,8 @@ import (
 	"github.com/yangshengBE/protobuf/gogoproto"
 	"github.com/yangshengBE/protobuf/proto"
 	descriptor "github.com/yangshengBE/protobuf/protoc-gen-gogo/descriptor"
-	plugin "github.com/yangshengBE/protobuf/protoc-gen-gogo/plugin"
 	"github.com/yangshengBE/protobuf/protoc-gen-gogo/generator/internal/remap"
+	plugin "github.com/yangshengBE/protobuf/protoc-gen-gogo/plugin"
 )
 
 // generatedCodeVersion indicates a version of the generated code.
@@ -1406,7 +1406,7 @@ func (g *Generator) generateImports() {
 	g.PrintImport(GoPackageName(g.Pkg["fmt"]), "fmt")
 	g.PrintImport(GoPackageName(g.Pkg["math"]), "math")
 	if gogoproto.ImportsGoGoProto(g.file.FileDescriptorProto) {
-		g.PrintImport(GoPackageName(g.Pkg["proto"]), GoImportPath(g.ImportPrefix)+GoImportPath("github.com/yangshengBE/protobuf/proto"))
+		g.PrintImport(GoPackageName(g.Pkg["proto"]), GoImportPath(g.ImportPrefix)+GoImportPath("github.com/gogo/protobuf/proto"))
 		if gogoproto.RegistersGolangProto(g.file.FileDescriptorProto) {
 			g.PrintImport(GoPackageName(g.Pkg["golang_proto"]), GoImportPath(g.ImportPrefix)+GoImportPath("github.com/golang/protobuf/proto"))
 		}
