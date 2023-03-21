@@ -399,7 +399,7 @@ func HasCompare(file *google_protobuf.FileDescriptorProto, message *google_proto
 }
 
 func RegistersGolangProto(file *google_protobuf.FileDescriptorProto) bool {
-	return proto.GetBoolExtension(file.Options, E_GoprotoRegistration, false)
+	return proto.GetBoolExtension(file.Options, E_GoprotoRegistration, true)
 }
 
 func HasMessageName(file *google_protobuf.FileDescriptorProto, message *google_protobuf.DescriptorProto) bool {
