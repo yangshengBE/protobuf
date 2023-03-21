@@ -33,8 +33,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogo/protobuf/jsonpb"
-	"github.com/gogo/protobuf/proto"
+	"github.com/yangshengBE/protobuf/jsonpb"
+	"github.com/yangshengBE/protobuf/proto"
 )
 
 func TestFullCircleProtoToStd(t *testing.T) {

@@ -29,9 +29,9 @@
 package face
 
 import (
-	"github.com/gogo/protobuf/gogoproto"
-	"github.com/gogo/protobuf/plugin/testgen"
-	"github.com/gogo/protobuf/protoc-gen-gogo/generator"
+	"github.com/yangshengBE/protobuf/gogoproto"
+	"github.com/yangshengBE/protobuf/plugin/testgen"
+	"github.com/yangshengBE/protobuf/protoc-gen-gogo/generator"
 )
 
 type test struct {

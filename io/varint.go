@@ -32,7 +32,7 @@ import (
 	"bufio"
 	"encoding/binary"
 	"errors"
-	"github.com/gogo/protobuf/proto"
+	"github.com/yangshengBE/protobuf/proto"
 	"io"
 )
 

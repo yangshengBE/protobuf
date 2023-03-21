@@ -142,7 +142,7 @@ func TestParameters(t *testing.T) {
 		wantPackageA: "alpha",
 		wantPackageB: "test_beta",
 		wantImportsA: map[string]bool{
-			"github.com/gogo/protobuf/proto": true,
+			"github.com/yangshengBE/protobuf/proto": true,
 			"beta":                           true,
 		},
 	}, {
@@ -176,7 +176,7 @@ func TestParameters(t *testing.T) {
 		wantPackageA: "alpha",
 		wantPackageB: "test_beta",
 		wantImportsA: map[string]bool{
-			"github.com/gogo/protobuf/proto": true,
+			"github.com/yangshengBE/protobuf/proto": true,
 			// Rewritten by the M parameter.
 			"package/gamma": true,
 		},

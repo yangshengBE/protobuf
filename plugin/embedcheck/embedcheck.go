@@ -49,8 +49,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/gogo/protobuf/gogoproto"
-	"github.com/gogo/protobuf/protoc-gen-gogo/generator"
+	"github.com/yangshengBE/protobuf/gogoproto"
+	"github.com/yangshengBE/protobuf/protoc-gen-gogo/generator"
 )
 
 type plugin struct {
